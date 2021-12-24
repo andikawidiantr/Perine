@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/biruagakgelap"
+    android:paddingTop="16dp"
+    tools:context=".admin.createbuku">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/ic_logo_perine" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan Buku"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/round_above"
+            android:elevation="10dp">
+
+            <TextView
+                android:id="@+id/textViewJudul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Judul Buku"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/brown"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/AE_judul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/round_border"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Penulis"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/brown"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/AE_penulis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/round_border"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Penerbit"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/brown"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/AE_penerbit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/round_border"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kategori"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/brown"
+                android:textSize="18sp"/>
+
+            <RadioGroup
+                android:id="@+id/AE_opsiKat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_fiksi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fiksi"
+                    android:textColor="@color/brown"/>
+
+                <RadioButton
+                    android:id="@+id/rb_nonfiksi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="non-fiksi"
+                    android:textColor="@color/brown"
+                    android:layout_marginLeft="50dp"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_insert_buku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="20dp"
+                android:text="Submit"
+                android:backgroundTint="@color/biruagakgelap"
+                android:layout_marginBottom="50dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
